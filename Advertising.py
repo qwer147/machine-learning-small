@@ -14,7 +14,7 @@ from sklearn.metrics import mean_squared_error
 
 #数据存放的位置,注意'\'要变成'/'
 '''
-path = 'D:alldata\//回归案例数据.Advertising.csv'
+path = 'D:alldata//回归案例数据.Advertising.csv'
 data = pd.read_csv(path)
 '''
 #由于路径中存在中文读取会报错，改成如下则可以
