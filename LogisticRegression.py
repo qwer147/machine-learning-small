@@ -37,6 +37,11 @@ lr = Pipeline([('sc',StandardScaler()),('clf',LogisticRegression())])
 lr.fit(x,y)
 pred = lr.predict(x)
 
+'''
+lr2 = make_pipeline(StandardScaler(),LogisticRegression())
+lr2.fit(x,y)
+'''
+
 #训练集上的准确率
 y1 = y.reshape(-1)
 #布尔类型
@@ -69,10 +74,7 @@ for first_index in range(len(confusion)):
     for second_index in range(len(confusion[first_index])):
         plt.text(first_index,second_index,confusion[first_index][second_index])
 plt.show()
-'''
-lr2 = make_pipeline(StandardScaler(),LogisticRegression())
-lr2.fit(x,y)
-'''
+
 
 #图示化
 #采样数量
